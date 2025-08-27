@@ -18,7 +18,8 @@ string = string.replace(word, emoticon) #replaces the words input in the emotico
 Unpacking List Problem: Unpacks the given list into its first, middle, and last segments.
 
 ```python
-emoticon ={} #a dictionary function that can set a certain string into an emoticon of your choosing.
-for word, emoticon in emoticons.items() #a loop that iterates every item in the emoticons dictionary.
-string = string.replace(word, emoticon) #replaces the words input in the emoticon dictionary with its set of emoticons
+unpacking_list_slicing() #the function where the unpacking is made.
+first = input[0] #gets the first element
+middle = input[1:-1] #gets the elements between the first and the last.
+last = input[-1] #gets the last element.
 ```
