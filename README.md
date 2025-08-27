@@ -10,6 +10,15 @@ sorted() #sorts the elements of the given word in its alphabetical order based o
 Emoticon Problem: Creates a function that replaces specific words with emoticons.
 
 ```python
-emoticon ={} #a function that can set a certain string into an emoticon of your choosing.
+emoticon ={} #a dictionary function that can set a certain string into an emoticon of your choosing.
+for word, emoticon in emoticons.items() #a loop that iterates every item in the emoticons dictionary.
+string = string.replace(word, emoticon) #replaces the words input in the emoticon dictionary with its set of emoticons
+```
 
+Unpacking List Problem: Unpacks the given list into its first, middle, and last segments.
+
+```python
+emoticon ={} #a dictionary function that can set a certain string into an emoticon of your choosing.
+for word, emoticon in emoticons.items() #a loop that iterates every item in the emoticons dictionary.
+string = string.replace(word, emoticon) #replaces the words input in the emoticon dictionary with its set of emoticons
 ```
