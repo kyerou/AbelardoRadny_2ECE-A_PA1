@@ -37,7 +37,7 @@ This problem made us create a function that replaces specific words with emotico
 First is to assign a function using def *function*()
 
 ```python
-def emotify() #the fucntion that will be used to replace certain strings into emoticons
+def emotify() #the function that will be used to replace certain strings with emoticons
 ```
 
 Inside the function is to create a variable that can be used to replace certain words assigned:
@@ -45,7 +45,7 @@ Inside the function is to create a variable that can be used to replace certain 
 emoticon = {} #a dictionary function that can set a certain string into an emoticon of your choosing.
 ```
 
-I used a loop that iterates every item in the emoticons dictionary:
+I used a loop that iterates over every item in the emoticons dictionary:
 ```python
 for word, emoticon in emoticons.items() #a loop that iterates every item in the emoticons dictionary.
 ```
@@ -55,12 +55,41 @@ And lastly, .replace() replaces the inputs with a certain assigned string/value/
 string = string.replace(word, emoticon) #replaces the words in the input with their set of emoticons.
 ```
 
+All together:
+```python
+def emotify(string):
+    emoticons ={
+        "smile": ":)",
+        "grin": ":D",
+        "sad": ":((",
+        "mad": ">:("
+    }
+    for word, emoticon in emoticons.items():
+        string = string.replace(word, emoticon)
+    return string
+```
+
 # Unpacking List Problem
 Unpacks the given list into its first, middle, and last segments.
 
+First is to create the function:
 ```python
-unpacking_list_slicing() #the function where the unpacking is made.
+def unpacking_list_slicing() #the function where the unpacking is made.
+```
+
+Now we have to get each element of the input using input[]:
+```python
 first = input[0] #gets the first element.
 middle = input[1:-1] #gets the elements between the first and the last.
 last = input[-1] #gets the last element..
 ```
+Note that input[] uses indexes to get a certain value.
+
+All together:
+```python
+def unpack_list_slicing(input):
+    first = input[0]
+    middle = input[1:-1]
+    last = input[-1]
+```
+
